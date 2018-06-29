@@ -39,3 +39,12 @@ $(function() {
   jQuery('#videoModal').on('hidden.bs.modal', function (e) {
     $('#videoModal iframe').attr('src', '');
 });  
+
+
+
+//Lightbox
+
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+})

@@ -8,6 +8,7 @@
     <title>Glozzom Theme</title>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -120,7 +121,8 @@
                 <div class="col">
                     <div class="container pt-5">
                         <h1>Are you ready to get started?</h1>
-                        <p class="d-none d-md-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis veritatis dolores id, officia culpa esse cumque sit! Voluptatum, veritatis laudantium?</p>
+                        <p class="d-none d-md-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis veritatis dolores id, officia
+                            culpa esse cumque sit! Voluptatum, veritatis laudantium?</p>
 
                     </div>
                 </div>
@@ -134,52 +136,129 @@
             <div class="row">
                 <div class="col-md-6 align-self-center">
                     <h3>Lorem Ipsum</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, dolorum voluptatibus. Officia accusamus dolorum animi obcaecati possimus totam voluptate quos!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, dolorum voluptatibus. Officia accusamus
+                        dolorum animi obcaecati possimus totam voluptate quos!</p>
                     <a href="" class="btn btn-outline-danger btn-lg">Learn More</a>
                 </div>
                 <div class="col-md-6">
-                    <img src="img/laptop-bg.jpg" class="img-fluid" alt="laptop">
+                    <img src="img/laptop.png" class="img-fluid" alt="laptop">
                 </div>
             </div>
         </div>
     </section>
-<!--VIDEO PLAY SECTION-->
-<section id="video-play">
-    <div class="dark-overlay">
-        <div class="row">
-            <div class="col">
-                <div class="container p-5">
-                    <a href="#"
-                     class="video"
-                     data-video="https://www.youtube.com/embed/16G-Hv23nqw"
-                     data-toggle="modal"
-                     data-target="#videoModal"
-                     >
-                         <i class="fa fa-play"></i>
-                    </a>
-                    <h1>See what we do!</h1>
+
+    <!--VIDEO PLAY SECTION-->
+    <section id="video-play">
+        <div class="dark-overlay">
+            <div class="row">
+                <div class="col">
+                    <div class="container p-5">
+                        <a href="#" class="video" data-video="https://www.youtube.com/embed/16G-Hv23nqw" data-toggle="modal" data-target="#videoModal">
+                            <i class="fa fa-play"></i>
+                        </a>
+                        <h1>See what we do!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--PHOTO GALLERY-->
+    <!--added static images because lorempixel site was offline for some reason, couldn't generate random url images-->
+
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h1 class="text-center">Photo Gallery</h1>
+            <p class="text-center">Check out our photos
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <a href="img/person1.jpeg" data-toggle="lightbox" data-gallery="img-gallery">
+                            <img src="img/person1.jpeg" alt="randomGeneratedPic" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="img/person2.jpeg" data-toggle="lightbox" data-gallery="img-gallery">
+                            <img src="img/person2.jpeg" alt="randomGeneratedPic" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="img/person3.jpeg" data-toggle="lightbox" data-gallery="img-gallery">
+                            <img src="img/person3.jpeg" alt="randomGeneratedPic" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <a href="img/person4.jpeg" data-toggle="lightbox" data-gallery="img-gallery">
+                            <img src="img/person4.jpeg" alt="randomGeneratedPic" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="img/person5.jpeg" data-toggle="lightbox" data-gallery="img-gallery">
+                            <img src="img/person5.jpeg" alt="randomGeneratedPic" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="img/person6.jpeg" data-toggle="lightbox" data-gallery="img-gallery">
+                            <img src="img/person6.jpeg" alt="randomGeneratedPic" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </p>
+        </div>
+    </section>
+
+    <!--NEWSLETTER-->
+
+    <section id="newsletter" class="text-center p-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>SignUp for our Newsletter</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et suscipit repudiandae unde esse culpa nemo
+                        exercitationem vero autem quasi voluptatem?</p>
+                    <form class="form-inline justify-content-center">
+                        <label class="sr-only" for="name">Name</label>
+                        <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Name">
+                        <label class="sr-only" for="email">Email</label>
+                        <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Email">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+
+    <footer id="main-footer" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Copyright 2018 &copy; Glozzom </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--VIDEO MODAL-->
+    <div class="modal fade" id="videoModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span> &times; </span>
+                    </button>
+                    <iframe src="" height="350" width="100%" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </div>
-</section>
-
-<!--VIDEO MODAL-->
-<div class="modal fade" id="videoModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button class="close" data-dismiss="modal"> <span> &times; </span> </button>
-                <iframe src="" height="350" width="100%" frameborder="0"
-                allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-</div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     <script src="js/main.js"></script>
 </body>
 
